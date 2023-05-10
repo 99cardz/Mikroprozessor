@@ -60,16 +60,24 @@
       <a name="label" val="PMemBus"/>
       <a name="width" val="20"/>
     </comp>
-    <comp lib="0" loc="(40,390)" name="Clock"/>
+    <comp lib="0" loc="(350,850)" name="Clock"/>
     <comp lib="0" loc="(40,430)" name="Pin">
       <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(460,830)" name="Tunnel">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(50,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(50,470)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Reset"/>
     </comp>
-    <comp lib="0" loc="(540,310)" name="Clock">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(520,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(540,350)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -83,10 +91,11 @@
       <a name="label" val="PMemBus"/>
       <a name="width" val="20"/>
     </comp>
-    <comp lib="1" loc="(360,750)" name="Controlled Buffer">
+    <comp lib="1" loc="(360,770)" name="Controlled Buffer">
       <a name="control" val="left"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="1" loc="(420,830)" name="AND Gate"/>
     <comp lib="1" loc="(800,620)" name="Controlled Buffer">
       <a name="control" val="left"/>
       <a name="facing" val="west"/>
@@ -112,6 +121,12 @@ fff8f 200 300 400 500
       <a name="max" val="0xffff"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="5" loc="(310,830)" name="LED">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="8" loc="(213,835)" name="Text">
+      <a name="text" val="Instruction Error"/>
+    </comp>
     <comp loc="(300,390)" name="CU"/>
     <comp loc="(770,330)" name="CPU_Register"/>
     <comp loc="(770,600)" name="ALU"/>
@@ -126,28 +141,37 @@ fff8f 200 300 400 500
     <wire from="(300,510)" to="(490,510)"/>
     <wire from="(300,530)" to="(350,530)"/>
     <wire from="(300,550)" to="(360,550)"/>
-    <wire from="(300,750)" to="(340,750)"/>
+    <wire from="(300,750)" to="(310,750)"/>
+    <wire from="(300,770)" to="(340,770)"/>
     <wire from="(310,180)" to="(310,390)"/>
+    <wire from="(310,750)" to="(310,810)"/>
+    <wire from="(310,810)" to="(320,810)"/>
+    <wire from="(310,830)" to="(320,830)"/>
+    <wire from="(320,810)" to="(320,830)"/>
+    <wire from="(320,810)" to="(370,810)"/>
     <wire from="(330,150)" to="(990,150)"/>
-    <wire from="(350,530)" to="(350,740)"/>
+    <wire from="(350,530)" to="(350,760)"/>
+    <wire from="(350,850)" to="(370,850)"/>
     <wire from="(360,550)" to="(360,740)"/>
     <wire from="(360,740)" to="(810,740)"/>
-    <wire from="(360,750)" to="(470,750)"/>
+    <wire from="(360,770)" to="(470,770)"/>
     <wire from="(370,410)" to="(370,680)"/>
     <wire from="(370,680)" to="(550,680)"/>
-    <wire from="(40,390)" to="(80,390)"/>
     <wire from="(40,430)" to="(50,430)"/>
+    <wire from="(420,830)" to="(460,830)"/>
     <wire from="(430,370)" to="(430,490)"/>
     <wire from="(430,370)" to="(550,370)"/>
-    <wire from="(470,530)" to="(470,750)"/>
+    <wire from="(470,530)" to="(470,770)"/>
     <wire from="(470,530)" to="(520,530)"/>
     <wire from="(490,390)" to="(490,510)"/>
     <wire from="(490,390)" to="(550,390)"/>
+    <wire from="(50,390)" to="(80,390)"/>
     <wire from="(50,430)" to="(50,470)"/>
     <wire from="(50,430)" to="(80,430)"/>
     <wire from="(500,550)" to="(500,660)"/>
     <wire from="(500,550)" to="(790,550)"/>
     <wire from="(500,660)" to="(550,660)"/>
+    <wire from="(520,310)" to="(540,310)"/>
     <wire from="(520,410)" to="(520,530)"/>
     <wire from="(520,410)" to="(550,410)"/>
     <wire from="(520,530)" to="(860,530)"/>
@@ -450,7 +474,7 @@ fff8f 200 300 400 500
       <circ-port dir="out" pin="1320,850" x="270" y="360"/>
       <circ-port dir="out" pin="1320,880" x="270" y="380"/>
       <circ-port dir="out" pin="1320,910" x="270" y="400"/>
-      <circ-port dir="out" pin="1320,940" x="270" y="150"/>
+      <circ-port dir="out" pin="1380,940" x="270" y="150"/>
       <circ-port dir="out" pin="440,1090" x="270" y="410"/>
       <circ-port dir="out" pin="540,390" x="270" y="100"/>
       <circ-port dir="out" pin="540,420" x="270" y="120"/>
@@ -582,7 +606,7 @@ fff8f 200 300 400 500
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1320,940)" name="Pin">
+    <comp lib="0" loc="(1380,940)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="ICNI"/>
@@ -747,6 +771,7 @@ fff8f 200 300 400 500
       <a name="output" val="true"/>
       <a name="width" val="2"/>
     </comp>
+    <comp lib="1" loc="(1360,940)" name="NOT Gate"/>
     <comp lib="2" loc="(500,490)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="3"/>
@@ -782,7 +807,7 @@ fff8f 200 300 400 500
     <comp lib="8" loc="(1515,585)" name="Text">
       <a name="text" val="WE Write Enable"/>
     </comp>
-    <comp lib="8" loc="(1588,948)" name="Text">
+    <comp lib="8" loc="(1612,948)" name="Text">
       <a name="text" val="Instruction Code Not Implemented"/>
     </comp>
     <comp lib="8" loc="(460,1045)" name="Text">
@@ -802,6 +827,8 @@ fff8f 200 300 400 500
     <wire from="(1290,570)" to="(1300,570)"/>
     <wire from="(130,540)" to="(270,540)"/>
     <wire from="(1300,530)" to="(1300,560)"/>
+    <wire from="(1320,940)" to="(1330,940)"/>
+    <wire from="(1360,940)" to="(1380,940)"/>
     <wire from="(140,480)" to="(200,480)"/>
     <wire from="(160,430)" to="(240,430)"/>
     <wire from="(180,190)" to="(180,470)"/>
