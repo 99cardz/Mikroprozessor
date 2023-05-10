@@ -95,7 +95,9 @@
       <a name="control" val="left"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="1" loc="(420,830)" name="AND Gate"/>
+    <comp lib="1" loc="(420,830)" name="AND Gate">
+      <a name="negate0" val="true"/>
+    </comp>
     <comp lib="1" loc="(800,620)" name="Controlled Buffer">
       <a name="control" val="left"/>
       <a name="facing" val="west"/>
@@ -123,9 +125,8 @@ fff8f 200 300 400 500
     </comp>
     <comp lib="5" loc="(310,830)" name="LED">
       <a name="facing" val="east"/>
-    </comp>
-    <comp lib="8" loc="(213,835)" name="Text">
-      <a name="text" val="Instruction Error"/>
+      <a name="label" val="InstructionError"/>
+      <a name="labelloc" val="west"/>
     </comp>
     <comp loc="(300,390)" name="CU"/>
     <comp loc="(770,330)" name="CPU_Register"/>
@@ -148,7 +149,7 @@ fff8f 200 300 400 500
     <wire from="(310,810)" to="(320,810)"/>
     <wire from="(310,830)" to="(320,830)"/>
     <wire from="(320,810)" to="(320,830)"/>
-    <wire from="(320,810)" to="(370,810)"/>
+    <wire from="(320,810)" to="(360,810)"/>
     <wire from="(330,150)" to="(990,150)"/>
     <wire from="(350,530)" to="(350,760)"/>
     <wire from="(350,850)" to="(370,850)"/>
