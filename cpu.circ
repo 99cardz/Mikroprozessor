@@ -1017,7 +1017,7 @@
     <comp lib="8" loc="(610,1095)" name="Text">
       <a name="text" val="Load Constant"/>
     </comp>
-    <comp lib="8" loc="(909,333)" name="Text">
+    <comp lib="8" loc="(905,330)" name="Text">
       <a name="text" val="6C = NOP"/>
     </comp>
     <comp loc="(840,360)" name="LDC_select"/>
