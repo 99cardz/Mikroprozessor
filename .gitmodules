@@ -1,3 +1,6 @@
 [submodule "masm"]
 	path = masm
 	url = https://gitlab.com/moseschmiedel/masm
+[submodule "BF-it"]
+	path = BF-it
+	url = git@github.com:elikaski/BF-it.git
