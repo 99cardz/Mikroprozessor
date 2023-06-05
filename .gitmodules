@@ -4,3 +4,6 @@
 [submodule "BF-it"]
 	path = BF-it
 	url = git@github.com:elikaski/BF-it.git
+[submodule "brainfix"]
+	path = brainfix
+	url = git@github.com:jorenheit/brainfix.git
