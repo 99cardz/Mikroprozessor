@@ -36,10 +36,10 @@ Logik kann mit den Schleifeninstruktionen `[` und `]` programmiert werden. Wenn 
 7 Bit pro Speicherzelle wurden gewählt, um die Anbindung an die tty einfach zu halten. Diese kann nur ascii Zeichen von 7 Bit breite darstellen.
 
 
-## [Programm](programms/euro.bf)
+## [Programm](https://github.com/99cardz/Mikroprozessor/blob/main/programms/euro.bf)
 
-Generell können alle Brainfuck Programme, nachdem sie assembled wurden, ausgeführt werden. Der [Assembler](asm.py) ist ebenso simpel wie die Sprache selber, optimierungen werden nicht durchgeführt.
-Es existieren bereits compiler die von unterschiedlichen Sprachen zu Brainfuck übersetzen, diese produzieren aber für die CPU zu große Programme. Das Programm [euro.bf](programms/euro.bf) wurde von Hand geschrieben. Es gibt einem die minimale Anzahl an Münzen für einen 1-stelligen Geldbetrag an.
+Generell können alle Brainfuck Programme, nachdem sie assembled wurden, ausgeführt werden. Der [Assembler](https://github.com/99cardz/Mikroprozessor/blob/main/asm.py) ist ebenso simpel wie die Sprache selber, optimierungen werden nicht durchgeführt.
+Es existieren bereits compiler die von unterschiedlichen Sprachen zu Brainfuck übersetzen, diese produzieren aber für die CPU zu große Programme. Das Programm [euro.bf](https://github.com/99cardz/Mikroprozessor/blob/main/programms/euro.bf) wurde von Hand geschrieben. Es gibt einem die minimale Anzahl an Münzen für einen 1-stelligen Geldbetrag an.
 
 ### Programmablauf
 
