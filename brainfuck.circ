@@ -219,7 +219,7 @@
     </comp>
     <comp lib="0" loc="(330,770)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="InstructionCLK"/>
+      <a name="label" val="FetchCLK"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(360,650)" name="Tunnel">
@@ -234,7 +234,7 @@
       <a name="label" val="ExecuteCLK"/>
     </comp>
     <comp lib="0" loc="(490,1140)" name="Tunnel">
-      <a name="label" val="InstructionCLK"/>
+      <a name="label" val="FetchCLK"/>
     </comp>
     <comp lib="0" loc="(510,800)" name="Tunnel">
       <a name="label" val="InputChar"/>
@@ -266,7 +266,7 @@
     </comp>
     <comp lib="0" loc="(900,890)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="InstructionCLK"/>
+      <a name="label" val="FetchCLK"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(910,1470)" name="Tunnel">
